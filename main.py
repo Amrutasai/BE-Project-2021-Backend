@@ -27,16 +27,6 @@ def video_feed():
 def test():
     return {'emotion':'test'}
 
-@app.route('/classify', methods=['POST'])
-def classify():
-    print(request, request.files)
-    if (request.files['image']): 
-        file = request.files['image']
-
-        result = classifyImage(file)
-        print('Model classification: ' + result)        
-        return result
-
 @app.route('/getemotion', methods=['POST'])
 def getemotion():
     print(request, request.files)
