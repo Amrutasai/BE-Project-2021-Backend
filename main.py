@@ -1,6 +1,5 @@
 from flask import Flask, render_template, Response
 from flask import request
-from classifier import classifyImage
 from predict_image import get_emotion
 
 # import cv2 as cv
