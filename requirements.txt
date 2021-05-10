@@ -29,10 +29,6 @@ Click==7.0
 cloudpickle==1.2.2
 colorama==0.4.1
 comtypes==1.1.7
-conda==4.9.0
-conda-build==3.18.9
-conda-package-handling==1.6.0
-conda-verify==3.4.2
 contextlib2==0.6.0
 cryptography==2.7
 cycler==0.10.0
@@ -81,12 +77,6 @@ Jinja2==2.10.3
 joblib==0.13.2
 json5==0.8.5
 jsonschema==3.0.2
-jupyter==1.0.0
-jupyter-client==5.3.3
-jupyter-console==6.0.0
-jupyter-core==4.5.0
-jupyterlab==1.1.4
-jupyterlab-server==1.0.6
 Keras==2.4.3
 Keras-Preprocessing==1.1.2
 keyring==18.0.0
