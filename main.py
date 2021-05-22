@@ -19,7 +19,6 @@ def getemotion():
     print(request, request.files)
     if (request.files['image']): 
         file = request.files['image']
-        file.save("Current.png")
         result = get_emotion(file)
         print("RESULT",result)
         print('Model classification: ' , result)        

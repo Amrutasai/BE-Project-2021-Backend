@@ -21,14 +21,10 @@ def reshape(x):
     return x_r
 
 def get_emotion(file):
-    fr = cv.imread('Current.png')
-    print("HIII=> in get_emotion")
-    # fr = Image.open(file).convert("RGB")
-    # fr = np.array(fr)
-    # img = cv.resize(img,(224,224))
+    fr = Image.open(file).convert("RGB")
+    fr = np.array(fr)
     gray = cv.cvtColor(fr, cv.COLOR_BGR2GRAY)
     faces = face_cascade.detectMultiScale(gray, 1.3, 5)
-    print (faces)
     for (x, y, w, h) in faces:
         print("HIII=> in get_emotion => forLoop")
         roi_gray = gray[y:y + h, x:x + w]
